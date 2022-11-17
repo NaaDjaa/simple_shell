@@ -1,6 +1,15 @@
-#include <stdio.h>
+#include "main.h"
+/**
+ * swap_int - swaps values of two integers
+ * @a: first value of integer
+ * @b: second value of integer
+ * Return: void
+ */
+void swap_int(int *a, int *b)
+{
+	int swap_value = *a;
 
-int main() {
-	printf("Hello World!");
-	return 0;
+
+	*a = *b;
+	*b = swap_value;
 }
